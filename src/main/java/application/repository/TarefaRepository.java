@@ -9,8 +9,6 @@ import java.util.Optional;
 @Repository
 public interface TarefaRepository extends JpaRepository<Tarefa, Long> {
 
-    Boolean findByConcluida();
-
     Optional<Tarefa> findByDescricao(String descricao);
 
 }
